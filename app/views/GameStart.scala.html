@@ -1,0 +1,16 @@
+@(csrfToken: Html)
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Escape from the Yeti</title>
+    </head>
+    <body>
+        <h1>Escape from the Yeti</h1>
+        <h2>The ultimate single player MMORPG</h2>
+        <form method="post">
+            @csrfToken
+            <input type="submit" value="I am worthy">
+        </form>
+    </body>
+</html>

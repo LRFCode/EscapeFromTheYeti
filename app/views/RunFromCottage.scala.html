@@ -1,0 +1,19 @@
+@(csrfToken: Html)
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>On the Slopes</title>
+    </head>
+    <body>
+        <p>As you run down the mountain you see a pile of snow and a shark cage.</p>
+        <form method="post" action="/hideinsnow">
+            @csrfToken
+            <input type="submit" value="Hide in the snow">
+        </form>
+        <form method="post">
+            @csrfToken
+            <input type="submit" value="Jump in the shark cage">
+        </form>
+    </body>
+</html>

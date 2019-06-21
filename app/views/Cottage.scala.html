@@ -1,0 +1,22 @@
+@(csrfToken: Html)
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>A Pleasant Cottage</title>
+    </head>
+    <body>
+        <p>You are at the beautiful cottage in the Himalayas.
+           It is so pleasant in your garden.
+           As you water your spinach tree you see an angry Yeti approaching.
+        </p>
+        <form method="post" action="/calm">
+            @csrfToken
+            <input type="submit" value="Try to calm the yeti">
+        </form>
+        <form method="post" action="/runfromcottage">
+            @csrfToken
+            <input type="submit" value="Run for your life">
+        </form>
+    </body>
+</html>
